@@ -2,7 +2,10 @@
 
 namespace src;
 
-class Medias
+abstract class Medias
 {
+protected string $nomMedia;
+protected string $dureeEmprunt;
+
 
 }

@@ -8,19 +8,19 @@ class Adherent {
 -String email
 -String dateAdhesion
 
-genererNumero()
-renouvelerAdhesion()
-getAdherent()
-isAdhesionValable()
++genererNumero()
++renouvelerAdhesion()
++getAdherent()
++isAdhesionValable()
 }
 
 abstract Media {
--String nomMedia
--String dureeEmpruntMedia
+#String nomMedia
+#String dureeEmpruntMedia
 
-getLivre()
-getBluray()
-getMagazine()
++getLivre()
++getBluray()
++getMagazine()
 }
 
 class Livre {
@@ -51,10 +51,10 @@ Medias nomMedia
 -String dureeEmprunt
 
 __construct()
-getEmprunt()
-isEmpruntInProgress() : bool
-isEmpruntOnAlert() : bool
-isEmpruntOutdated() : bool
++getEmprunt()
++isEmpruntInProgress() : bool
++isEmpruntOnAlert() : bool
++isEmpruntOutdated() : bool
 
 }
 

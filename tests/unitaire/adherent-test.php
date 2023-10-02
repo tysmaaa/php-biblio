@@ -6,3 +6,5 @@ echo GREEN_BACKGROUND.BLACK;
 echo "Tests : classe Adherent";
 echo RESET;
 echo PHP_EOL;
+
+$adherent = new \src\Adherent('','')
