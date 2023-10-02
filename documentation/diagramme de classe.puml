@@ -1,0 +1,68 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Adherent {
+-String numeroAdherent
+-String prenom
+-String nom
+-String email
+-String dateAdhesion
+
+genererNumero()
+renouvelerAdhesion()
+getAdherent()
+isAdhesionValable()
+}
+
+abstract Media {
+-String nomMedia
+-String dureeEmpruntMedia
+
+getLivre()
+getBluray()
+getMagazine()
+}
+
+class Livre {
+String isbn
+String titre
+String auteur
+Int nombrePages
+}
+
+class Bluray {
+String titre
+String realisateur
+String duree
+Int anneeSortie
+}
+
+class Magazine {
+String titre
+Int numero
+String datePublication
+}
+
+class Emprunt {
+Adherent numeroAdherent
+Medias nomMedia
+-String dateEmprunt
+-String dateRetour
+-String dureeEmprunt
+
+__construct()
+getEmprunt()
+isEmpruntInProgress() : bool
+isEmpruntOnAlert() : bool
+isEmpruntOutdated() : bool
+
+}
+
+Media <|--- Livre
+Media <|--- Bluray
+Media <|--- Magazine
+
+Adherent --> Emprunt : réalise
+Emprunt --> Media : qui comprend
+
+@enduml
