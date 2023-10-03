@@ -37,6 +37,15 @@ private string $dureeEmprunt;
     }
 
     public function isEmpruntOnAlert() : bool {
+        $msgSucces = "L'adhesion est en alerte";
+        $msgErreur = "L'adhesion n'est pas en alerte";
+        $dateAdhesion = $this->dateAdhesion;
+        if ($this->dateAdhesion <= $dateAdhesion+1) {
+            $date = strtotime($dateAdhesion);
+            return $msgSucces;
+        } else {
+            return $msgErreur;
+        }
 
     }
 
