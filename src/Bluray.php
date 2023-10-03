@@ -2,7 +2,7 @@
 
 namespace src;
 
-class Bluray extends Medias
+class Bluray extends Media
 {
 private string $titre;
 private string $realisateur;

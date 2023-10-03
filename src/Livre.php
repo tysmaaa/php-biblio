@@ -2,7 +2,7 @@
 
 namespace src;
 
-class Livre extends Medias
+class Livre extends Media
 {
 private string $isbn;
 private string $titre;

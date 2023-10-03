@@ -4,11 +4,11 @@ namespace src;
 
 class Adherent
 {
-private string $numeroAdherent;
-private string $prenom;
-private string $nom;
-private string $email;
-private string $dateAdhesion;
+    private string $numeroAdherent;
+    private string $prenom;
+    private string $nom;
+    private string $email;
+    private string $dateAdhesion;
 
     /**
      * @param string $numeroAdherent
@@ -25,6 +25,7 @@ private string $dateAdhesion;
         $this->email = $email;
         $this->dateAdhesion = $dateAdhesion;
     }
+
 
     /**
      * @param string $prenom
@@ -50,9 +51,25 @@ private string $dateAdhesion;
         $this->dateAdhesion = $dateAdhesion;
     }
 
-public function genererNumero() {
-if (new Adherent()) {
-    $nombre = rand(100000, 999999);
-    $numeroAdherent = "AD-".$nombre;}
-}
+    public function genererNumero()
+    {
+            $nombre = rand(100000, 999999);
+            $numeroAdherent = "AD-" . $nombre;
+    }
+
+    public function renouvelerAdhesion()
+    {
+$this->dateAdhesion = $this->dateAdhesion *2;
+    }
+
+    public function getAdherent() : string {
+        return $this->numeroAdherent;
+    }
+    public function isAdhesionValable() : bool
+    {
+        $dateAdhesion = $this->dateAdhesion;
+        if ($this->dateAdhesion < $dateAdhesion * 2);
+        $date = strtotime($dateAdhesion);
+        echo date('d/M/Y), $date);
+    }
 }

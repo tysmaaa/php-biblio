@@ -14,7 +14,7 @@ class Adherent {
 +isAdhesionValable()
 }
 
-abstract Media {
+abstract class Media {
 #String nomMedia
 #String dureeEmpruntMedia
 
@@ -44,13 +44,10 @@ String datePublication
 }
 
 class Emprunt {
-Adherent numeroAdherent
-Medias nomMedia
 -String dateEmprunt
 -String dateRetour
 -String dureeEmprunt
 
-__construct()
 +getEmprunt()
 +isEmpruntInProgress() : bool
 +isEmpruntOnAlert() : bool

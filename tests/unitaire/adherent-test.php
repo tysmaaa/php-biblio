@@ -7,4 +7,4 @@ echo "Tests : classe Adherent";
 echo RESET;
 echo PHP_EOL;
 
-$adherent = new \src\Adherent('','')
+$adherent = new \src\Adherent('jacque','miray','salut@gmail.com', '26/02/2023');
