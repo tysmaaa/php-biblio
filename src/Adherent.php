@@ -53,23 +53,31 @@ class Adherent
 
     public function genererNumero()
     {
-            $nombre = rand(100000, 999999);
-            $numeroAdherent = "AD-" . $nombre;
+        $nombre = rand(100000, 999999);
+        $numeroAdherent = "AD-" . $nombre;
     }
 
     public function renouvelerAdhesion()
     {
-$this->dateAdhesion = $this->dateAdhesion *2;
+        $this->dateAdhesion = $this->dateAdhesion * 2;
     }
 
-    public function getAdherent() : string {
+    public function getAdherent(): string
+    {
         return $this->numeroAdherent;
     }
-    public function isAdhesionValable() : bool
+
+    public function isAdhesionValable(): bool
     {
+        $msgSucces = "L'adhesion est valable";
+        $msgErreur = "L'adhesion n'est pas valable";
         $dateAdhesion = $this->dateAdhesion;
-        if ($this->dateAdhesion < $dateAdhesion * 2);
-        $date = strtotime($dateAdhesion);
-        echo date('d/M/Y), $date);
+        if ($this->dateAdhesion < $dateAdhesion * 2) {
+            $date = strtotime($dateAdhesion);
+        return $msgSucces;
+        } else {
+            return $msgErreur;
     }
+
+        }
 }

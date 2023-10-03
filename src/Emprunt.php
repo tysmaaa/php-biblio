@@ -32,5 +32,15 @@ private string $dureeEmprunt;
         return $this->dureeEmprunt;
     }
 
+    public function isEmpruntInProgress() : bool {
 
+    }
+
+    public function isEmpruntOnAlert() : bool {
+
+    }
+
+    public function isEmpruntOutdated() : bool {
+
+    }
 }
