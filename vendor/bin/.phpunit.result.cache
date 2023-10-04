@@ -1,0 +1,1 @@
+{"version":1,"defects":{"App\\Tests\\ClasseATest::doit_fonctionner":7},"times":{"App\\Tests\\ClasseATest::doit_fonctionner":0.002,"App\\Tests\\ClasseATest::Addition_AvecDesNombresPositifs_SommeCorrectePositive":0.002}}
